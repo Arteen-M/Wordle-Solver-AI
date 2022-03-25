@@ -24,5 +24,8 @@ Additional Notes:
 2. The AI scrapes the https://www.wordleunlimited.com/ website to find the necessary information.
       - Some websites don't allow this, but https://www.wordleunlimited.com/ does
       - You can verfiy this on this site: https://www.wordleunlimited.com/robots.txt
-3. There are two programs, AI and Solver.
+3. There are two programs, AI and Solver. 
+      - The AI trains the parameters using https://www.wordleunlimited.com/
+      - The Solver takes manual input for use and testing in https://www.nytimes.com/games/wordle/index.html
+ 
 
