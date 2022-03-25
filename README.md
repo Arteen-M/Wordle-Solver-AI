@@ -8,7 +8,7 @@ It uses a basic stratagy and chooses guesses base on several factors:
 3. How many vowels are in the guess
 4. The frequency of each letter in the guess
 
-It applies a weight to each of those factors, the only exception being (1.), which is absolute.
+It applies a weight to each of those factors, the only exception being #1, which is absolute.
 Then it gives each possible guess a score and picks the one with the highest score.
 
 It starts with some base parameters and adjusts those over time. It does this by:
