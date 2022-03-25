@@ -4,7 +4,6 @@ from pynput.keyboard import Key, Controller
 import random
 
 keyboard = Controller()
-
 driver = webdriver.Chrome("../Wordle/chromedriver_win32/chromedriver.exe")
 driver.get('https://www.wordleunlimited.com/')
 content = driver.page_source
@@ -13,6 +12,14 @@ soup = BeautifulSoup(content, features="html.parser")
 absent = []
 elsewhere = []
 present = []
+
+p = open("../Wordle/Parameters.txt", 'r')
+parameters = p.readline().split()
+
+for i in range(len(parameters)):
+    parameters[i] = float(parameters[i].strip(','))
+
+p.close()
 
 
 def best_guess(word_list, vowels=6, repeat=20, frequency=1):
@@ -95,7 +102,7 @@ information = []
 guess = []
 potential_guesses = []
 
-test_args = [[6.2, 20, 1]]
+test_args = [parameters]
 all_args = []
 current_args = test_args[0]
 
@@ -208,6 +215,11 @@ while True:
     all_args.sort(reverse=True)
     print(all_args, generation_number)
 
+    p = open("../Wordle/Parameters.txt", 'w')
+    p.write(str(all_args[0][1]).lstrip('[').rstrip(']'))
+    p.close()
+
     test_args = argument_adjustment(all_args[0][0], all_args[0][1][0], all_args[0][1][1], all_args[0][1][2])
     print(test_args)
     all_args = []
+
