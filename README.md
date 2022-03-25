@@ -27,5 +27,7 @@ Additional Notes:
 3. There are two programs, AI and Solver. 
       - The AI trains the parameters using https://www.wordleunlimited.com/
       - The Solver takes manual input for use and testing in https://www.nytimes.com/games/wordle/index.html
+4. The AI uses simulated key presses to enter things into the wordle, so tabbing it out will let the AI loose
+5.  
  
 
