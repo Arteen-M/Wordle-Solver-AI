@@ -151,7 +151,7 @@ while True:
                     try:
                         guess = best_guess(words, current_args[0], current_args[1], current_args[2])
                     except IndexError:
-                        guess = 'trash'
+                        guess = 'blank'
 
                 for n in guess:
                     keyboard.press(n)
