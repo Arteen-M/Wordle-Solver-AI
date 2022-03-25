@@ -1,16 +1,27 @@
+p = open("../Wordle/Parameters.txt", 'r')
+parameters = p.readline().split()
+
+for i in range(len(parameters)):
+    parameters[i] = float(parameters[i].strip(','))
+
+p.close()
+
+vowels = parameters[0]
+repeat = parameters[1]
+frequency = parameters[2]
 
 
-def best_guess(word_list):
+def best_guess(word_list, v=6, r=20, f=1):
     p_guesses = []
     for i in range(len(word_list)):
-        w = weightings(word_list[i])
+        w = weightings(word_list[i], v, r, f)
         p_guesses.append([w, word_list[i]])
 
     p_guesses.sort(reverse=True)
     return p_guesses[0][1]
 
 
-def weightings(word):
+def weightings(word, v=6, r=20, f=1):
     word_weight = 0
     vowels = ['a', 'e', 'i', 'o', 'u']
     freq = {'e': 56.88, 'a': 43.31, 'r': 38.64, 'i': 38.45, 'o': 36.51, 't': 35.43, 'n': 33.92, 's': 29.23,
@@ -20,10 +31,10 @@ def weightings(word):
 
     for vowel in vowels:
         if word.count(vowel) > 0:
-            word_weight += 6
+            word_weight += v
 
     for i in range(5):
-        word_weight += repeats(word.count(word[i]), 20) + freq[word[i]]
+        word_weight += repeats(word.count(word[i]), r) + (f * freq[word[i]])
 
     return word_weight
 
@@ -42,8 +53,7 @@ weight = 0
 
 while True:
     if not guess:
-        guess = 'alans'
-        # guess = best_guess(words)
+        guess = best_guess(words, vowels, repeat, frequency)
     else:
         information = input("Enter Information from last guess (0, 1, -1): ").split()
         for x in range(5):
@@ -71,7 +81,9 @@ while True:
                     words.append(words[0])
                     words.pop(0)
 
-        guess = best_guess(words)
+        guess = best_guess(words, vowels, repeat, frequency)
 
     print('Guess %s' % str(guess))
+
+
 
