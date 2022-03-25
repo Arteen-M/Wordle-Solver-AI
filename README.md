@@ -1,6 +1,6 @@
 # Wordle-Solver-AI
 
-This is a program that trains itself to beat Wordles as consistnetly as possible.
+This is a program that trains itself to beat https://www.wordleunlimited.com/ as consistnetly as possible.
 
 It uses a basic stratagy and chooses guesses base on several factors:
 1. The information provided by previous guesses
@@ -19,5 +19,10 @@ It starts with some base parameters and adjusts those over time. It does this by
 
 Once it's done that about 9 times, it takes the best parameters, keeps them, and repeats.
 
+Additional Notes:
+The program requires the chromedriver to open and access the wordle unlimited website to train.
+The program scrapes the https://www.wordleunlimited.com/ website to find the necessary information.
+  Some websites don't allow this, but https://www.wordleunlimited.com/ does
+  You can verfiy this on this site: https://www.wordleunlimited.com/robots.txt
 
 
