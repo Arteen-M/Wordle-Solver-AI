@@ -27,7 +27,7 @@ Additional Notes:
 3. There are two programs, AI and Solver. 
       - The AI trains the parameters using https://www.wordleunlimited.com/
       - The Solver takes manual input for use and testing in https://www.nytimes.com/games/wordle/index.html
-4. The AI uses simulated key presses to enter things into the wordle, so tabbing it out will let the AI loose
+4. The AI uses simulated key presses to enter things into the wordle, so tabbing out will let the AI loose
 5. If the solution is not in the AIs word list (Words.txt), the AI will type "blank" until it loses to indicate that
       - In this case, the loss will not count against (or for) its win rate
  
