@@ -24,5 +24,7 @@ Additional Notes:
 2. The program scrapes the https://www.wordleunlimited.com/ website to find the necessary information.
       - Some websites don't allow this, but https://www.wordleunlimited.com/ does
       - You can verfiy this on this site: https://www.wordleunlimited.com/robots.txt
-
+3. To Date, the program has two major flaws:
+      - It has no way of saving any of its training without human supervision
+      - It's extraordinarily slow
 
