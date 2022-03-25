@@ -30,5 +30,6 @@ Additional Notes:
 4. The AI uses simulated key presses to enter things into the wordle, so tabbing out will let the AI loose
 5. If the solution is not in the AIs word list (Words.txt), the AI will type "blank" until it loses to indicate that
       - In this case, the loss will not count against (or for) its win rate
+      - It will add the missing word to its word list (Words.txt)
  
 
