@@ -17,7 +17,7 @@ It starts with some base parameters and adjusts those over time. It does this by
 3. Sightly adjusting the parameters
 4. Repeat
 
-Once it's done that about 9 times, it takes the best parameters, keeps them, and repeats.
+Once it's done that about 12 times, it takes the best parameters, keeps them, and repeats.
 
 Additional Notes:
 1. The AI requires the chromedriver to open and access the wordle unlimited website to train.
