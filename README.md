@@ -1,6 +1,6 @@
 # Wordle-Solver-AI
 
-This is a program that trains itself to beat https://www.wordleunlimited.com/ as consistnetly as possible.
+This is a program that trains itself to beat https://www.wordleunlimited.com/ as consistently as possible.
 
 It uses a basic stratagy and chooses guesses base on several factors:
 1. The information provided by previous guesses
