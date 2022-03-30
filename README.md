@@ -1,5 +1,11 @@
 # Wordle-Solver-AI
 
+******
+Unfortunately, wordleunlimited.com seems to have changed sites/ domains, so the A.I that trains itself will no longer work. Until a suitable 
+alternative is found, the A.I. is useless at this point
+******
+
+
 This is a program that trains itself to beat https://www.wordleunlimited.com/ as consistently as possible.
 
 It uses a basic stratagy and chooses guesses base on several factors:
