@@ -2,7 +2,7 @@
 
 ******
 Unfortunately, wordleunlimited.com seems to have changed sites/ domains, so the A.I that trains itself will no longer work. Until a suitable 
-alternative is found, the A.I. is useless at this point
+alternative is found, the A.I. is currently unusable
 ******
 
 
