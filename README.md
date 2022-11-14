@@ -8,7 +8,7 @@ alternative is found, the A.I. is currently unusable
 
 This is a program that trains itself to beat https://www.wordleunlimited.com/ as consistently as possible.
 
-It uses a basic stratagy and chooses guesses base on several factors:
+It uses a basic stratagy and chooses guesses base on these factors:
 1. The information provided by previous guesses
 2. How many unique letters are in the guess
 3. How many vowels are in the guess
