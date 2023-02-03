@@ -1,0 +1,13 @@
+short
+speed
+
+
+This file takes the first two lines and determines which word set and which parameters to use.
+It ignores any other lines.
+
+On the first line, "short" indicates to use the short list of words (~2000 words), "long" indicates to use
+the long list of words (~15000 words) and anything else indicates to use the test set of words (~6000 words).
+The test set was the original set of words used to test the program.
+
+The second line indicates which parameters to use. "speed" indicates to use the parameters designed for speed, and
+"avg" (or any other input) indicates to use the parameters for average.
